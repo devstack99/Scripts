@@ -1,6 +1,6 @@
 #cloud-config
 # ssh keys for access
-
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC161SHJEADD6ejVLwjSGGT9iMBuzW18mkyenILeJ9ID4dUMJ0VXBabwiF4FFsaSpcrK/XNFzOlTverQEjJ7bmZx4/GwYXSntWoWk1/oRsGbUS90CSEB7Ma3+I+Fb4EfFkWHexhb1lvwrkVVJPE7mloQOQL6vB1/GrHRMM93CwtsEyNIn8XGWPfT+32ZEJ5jPxvX3c01xE5QlLu5wAJkPZ4tXA/DgJJN/BIFemTREs4r2dG99msdWwYNqqf9cthWmXnLoWQ9Y9J4XC2U2Txoyga6Ldlp/R2yZpAlgxDZqiU/tJn7yT4oKcXQvkDBqg2WLcGWTeRVAcZ6dy5mPmrh0eV admin@osx-ws.local
 
 # rancherOS hostname
 hostname: ros-01
