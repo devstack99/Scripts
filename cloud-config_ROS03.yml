@@ -1,0 +1,17 @@
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgkugE3WEJMygUEEe4yEmEvNW8BcX2wIQbXru5V9qidqFv1cxQ0FmKiLfejKUzatC4zzdYxcZe1AckXR+7Wn0B+92w+NE8FTiK7AgtmwXJAxm01SulYFXtlJfzGOaanQZi5P8qdp7OdcOpEuEWb6tsmLgQkA0gd8mKDQwxpRUxKvSqE/MAuYdM/KNwSQSED+DGWT/AyrGqqEUqhnS0f9JHAh5exZf7Vm6dytgB8B/GHw8k1U1vEEkhpMqO1Lr5Ro9J6Q840OlSvyFJpYr4MMGltRYeJFo0LFiD6SCDcugqkm5yJmNI4ezfbIRA1RijqwlT8bDudLJ/s20ILpD5S/xe5CwC2hTvwnuknrpMqLPe6L1Nv7vLVedyE0MeDgmRL5TTaKDJtrIJnG0+L0EzaCF1gJopNG/Fp/BtcnlLDe4RFiy+zVK5dNczkMNT7c7FYuMIt+mvwbQHZlDjnS/pZUS7EljXQi7J5wDDDNl0q8/3dIVzvRFJWi1cMnx48riBav8= admin@lnxws
+
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 192.168.1.22
+        gateway: 192.168.1.1
+        dhcp: false
+        mtu: 1500
+    dns:
+      nameservers:
+        - 192.168.1.2
+        - 8.8.8.8
+  hostname: ROS03
